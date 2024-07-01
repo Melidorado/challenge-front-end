@@ -1,3 +1,8 @@
+export enum PostType {
+  POST = "post",
+  TICKETVOLUME = "ticketVolume",
+}
+
 export interface Post {
   id: string;
   image: string;
@@ -5,4 +10,5 @@ export interface Post {
   title: string;
   description: string;
   tags: string[];
+  article: string
 }

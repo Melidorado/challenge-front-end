@@ -5,7 +5,7 @@ import data from "../data/data.json";
 import { Post } from "../types";
 
 function SearchContainer() {
-  const INITIAL_POSTS: Post[] = data.posts;
+  const INITIAL_POSTS: Post[] = data.filter((article) => article.article === "post");
   const [search, setSearch] = useState<string>("");
   const [activeSearch, setActiveSearch] = useState<boolean>(false);
   const [focusedSearch, setFocusedSearch] = useState<string>(search);

@@ -1,3 +1,5 @@
+import Tag from "./Tag";
+
 interface Props {
   width: string;
   height: string;
@@ -76,16 +78,7 @@ function ArticleCard({
           <div className="flex flex-row gap-3">
             {tags.map((tag) => {
               return (
-                <button
-                  key={tag}
-                  className="bg-[#fcf2fa] px-[10px] rounded-full"
-                  onClick={handleTags}
-                  value={tag}
-                >
-                  <p className="text-[#c11574] font-Montserrat-SemiBold text-[12px]">
-                    {tag}
-                  </p>
-                </button>
+                <Tag key={tag} tag={tag} handleTags={handleTags} />
               );
             })}
           </div>

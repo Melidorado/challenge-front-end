@@ -1,54 +1,56 @@
-{
-  "posts": [
-    {
-      "id": "1",
-      "image": "/assets/posts/5_post-1.png",
-      "author": "Olivia Rhye • 20 Jan 2022",
-      "title": "UX review presentations",
-      "description": "How do you create compelling presentations that wow your colleagues and impress your managers?",
-      "tags": ["Design", "Research", "Presentation"]
-    },
-    {
-      "id": "2",
-      "image": "/assets/posts/6_post-2.png",
-      "author": "Phoenix Baker • 19 Jan 2022",
-      "title": "Migrating to Linear 101",
-      "description": "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get...",
-      "tags": ["Design", "Research"]
-    },
-    {
-      "id": "3",
-      "image": "/assets/posts/7_post-3.png",
-      "author": "Lana Steiner • 18 Jan 2022",
-      "title": "Building your API Stack",
-      "description": "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...",
-      "tags": ["Design", "Research"]
-    }
-  ],
-  "ticketVolume": [
-    {
-      "id": "1",
-      "image": "/assets/ticket/3_card-1.jpeg",
-      "author": "Alec Whitten • 17 Jan 2022",
-      "title": "Bill Walsh leadership lessons",
-      "description": "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
-      "tags": ["Leadership", "Management"]
-    },
-    {
-      "id": "2",
-      "image": "/assets/ticket/4_card-2.jpeg",
-      "author": "Demi WIlkinson • 16 Jan 2022",
-      "title": "PM mental models",
-      "description": "Mental models are simple expressions of complex processes or relationships.",
-      "tags": ["Product", "Research", "Frameworks"]
-    },
-    {
-      "id": "3",
-      "image": "/assets/ticket/5_card-3.jpeg",
-      "author": "Candice Wu • 15 Jan 2022",
-      "title": "What is Wireframing?",
-      "description": "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
-      "tags": ["Design", "Research"]
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "image": "/assets/posts/5_post-1.png",
+    "author": "Olivia Rhye • 20 Jan 2022",
+    "title": "UX review presentations",
+    "description": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    "tags": ["Design", "Research", "Presentation"],
+    "article": "post"
+  },
+  {
+    "id": "2",
+    "image": "/assets/posts/6_post-2.png",
+    "author": "Phoenix Baker • 19 Jan 2022",
+    "title": "Migrating to Linear 101",
+    "description": "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get...",
+    "tags": ["Design", "Research"],
+    "article": "post"
+  },
+  {
+    "id": "3",
+    "image": "/assets/posts/7_post-3.png",
+    "author": "Lana Steiner • 18 Jan 2022",
+    "title": "Building your API Stack",
+    "description": "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...",
+    "tags": ["Design", "Research"],
+    "article": "post"
+  },
+  {
+    "id": "1",
+    "image": "/assets/ticket/3_card-1.jpeg",
+    "author": "Alec Whitten • 17 Jan 2022",
+    "title": "Bill Walsh leadership lessons",
+    "description": "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+    "tags": ["Leadership", "Management"],
+    "article": "ticketVolume"
+  },
+  {
+    "id": "2",
+    "image": "/assets/ticket/4_card-2.jpeg",
+    "author": "Demi WIlkinson • 16 Jan 2022",
+    "title": "PM mental models",
+    "description": "Mental models are simple expressions of complex processes or relationships.",
+    "tags": ["Product", "Research", "Frameworks"],
+    "article": "ticketVolume"
+  },
+  {
+    "id": "3",
+    "image": "/assets/ticket/5_card-3.jpeg",
+    "author": "Candice Wu • 15 Jan 2022",
+    "title": "What is Wireframing?",
+    "description": "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
+    "tags": ["Design", "Research"],
+    "article": "ticketVolume"
+  }
+]
