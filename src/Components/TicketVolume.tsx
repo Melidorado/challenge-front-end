@@ -2,38 +2,11 @@ import ArticleCard from "./ArticleCard";
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 import { Post } from "../types";
-
-const INITIAL_TICKET_VOLUME = [
-  {
-    id: "1",
-    image: "/assets/ticket/3_card-1.jpeg",
-    author: "Alec Whitten • 17 Jan 2022",
-    title: "Bill Walsh leadership lessons",
-    description:
-      "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
-    tags: ["Leadership", "Management"],
-  },
-  {
-    id: "2",
-    image: "/assets/ticket/4_card-2.jpeg",
-    author: "Demi WIlkinson • 16 Jan 2022",
-    title: "PM mental models",
-    description:
-      "Mental models are simple expressions of complex processes or relationships.",
-    tags: ["Product", "Research", "Frameworks"],
-  },
-  {
-    id: "3",
-    image: "/assets/ticket/5_card-3.jpeg",
-    author: "Candice Wu • 15 Jan 2022",
-    title: "What is Wireframing?",
-    description:
-      "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
-    tags: ["Design", "Research"],
-  },
-];
+import data from "../data/data.json";
 
 function TicketVolume() {
+  const INITIAL_TICKET_VOLUME: Post[] = data.ticketVolume;
+
   const [ticketVolume, setTicketVolume] = useState<Array<Post>>(
     INITIAL_TICKET_VOLUME
   );

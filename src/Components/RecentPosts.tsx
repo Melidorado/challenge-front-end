@@ -2,38 +2,10 @@ import ArticleCard from "./ArticleCard";
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 import { Post } from "../types";
-
-const INITIAL_POSTS = [
-  {
-    id: "1",
-    image: "/assets/posts/5_post-1.png",
-    author: "Olivia Rhye • 20 Jan 2022",
-    title: "UX review presentations",
-    description:
-      "How do you create compelling presentations that wow your colleagues and impress your managers?",
-    tags: ["Design", "Research", "Presentation"],
-  },
-  {
-    id: "2",
-    image: "/assets/posts/6_post-2.png",
-    author: "Phoenix Baker • 19 Jan 2022",
-    title: "Migrating to Linear 101",
-    description:
-      "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get...",
-    tags: ["Design", "Research"],
-  },
-  {
-    id: "3",
-    image: "/assets/posts/7_post-3.png",
-    author: "Lana Steiner • 18 Jan 2022",
-    title: "Building your API Stack",
-    description:
-      "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...",
-    tags: ["Design", "Research"],
-  },
-];
+import data from "../data/data.json";
 
 function RecentPosts() {
+  const INITIAL_POSTS: Post[] = data.posts;
   const [posts, setPosts] = useState<Array<Post>>(INITIAL_POSTS);
   const [filtered, setFiltered] = useState<boolean>(false);
 
