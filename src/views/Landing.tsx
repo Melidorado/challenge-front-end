@@ -5,7 +5,7 @@ import TicketVolume from "../Components/TicketVolume";
 
 function Landing() {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white relative">
       <NavBar />
       <SearchContainer />
       <RecentPosts />

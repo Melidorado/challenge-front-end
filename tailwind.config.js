@@ -14,7 +14,7 @@ export default {
         actionButton: "#0ba1ff",
       },
       boxShadow: {
-        main: "0px 22px 35px -11px rgba(39,58,87,0.45);",
+        main: "0px -1px 8px 0px rgba(30,133,189,0.3);",
       },
     },
   },

@@ -7,7 +7,8 @@ interface Props {
   author: string;
   tags: string[];
   vertical: boolean;
-  handleTags: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  handleTags?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  search: boolean;
 }
 
 function ArticleCard({
@@ -20,6 +21,7 @@ function ArticleCard({
   tags,
   vertical,
   handleTags,
+  search,
 }: Props) {
   return (
     <article
@@ -70,22 +72,24 @@ function ArticleCard({
         <p className={`text-textGrey font-Montserrat-Medium "text-[15px]"`}>
           {description}
         </p>
-        <div className="flex flex-row gap-3">
-          {tags.map((tag) => {
-            return (
-              <button
-                key={tag}
-                className="bg-[#fcf2fa] px-[10px] rounded-full"
-                onClick={handleTags}
-                value={tag}
-              >
-                <p className="text-[#c11574] font-Montserrat-SemiBold text-[12px]">
-                  {tag}
-                </p>
-              </button>
-            );
-          })}
-        </div>
+        {!search && (
+          <div className="flex flex-row gap-3">
+            {tags.map((tag) => {
+              return (
+                <button
+                  key={tag}
+                  className="bg-[#fcf2fa] px-[10px] rounded-full"
+                  onClick={handleTags}
+                  value={tag}
+                >
+                  <p className="text-[#c11574] font-Montserrat-SemiBold text-[12px]">
+                    {tag}
+                  </p>
+                </button>
+              );
+            })}
+          </div>
+        )}
       </section>
     </article>
   );
