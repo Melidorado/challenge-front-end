@@ -12,7 +12,7 @@ function RecentPosts() {
       sectionTitle="Recent Blog Posts"
       bgColor="bg-transparent"
       data={INITIAL_POSTS}
-      gridContainer="h-full grid grid-cols-2 gap-8"
+      gridContainer="h-full grid grid-cols-2 gap-8 sm:grid-cols-1 sm:gap-4"
     >
       {(data, handleTags) =>
         data.map((article, index) => (

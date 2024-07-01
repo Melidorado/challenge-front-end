@@ -2,6 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      'sm': {'max': '1023px'},
+    },
     fontFamily: {
       "Montserrat-Bold": ["Montserrat-Bold"],
       "Montserrat-Medium": ["Montserrat-Medium"],

@@ -8,22 +8,20 @@ interface Props {
 function SearchBar({ search, setSearch }: Props) {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(search);
   };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
-    console.log(search);
   };
 
   return (
     <form
-      className={`flex flex-row ${search && "w-[40%]"}`}
+      className={`flex flex-row ${search && "w-[40%] sm:w-full"}`}
       onSubmit={handleSubmit}
     >
       <button className="rounded-l-lg px-4 py-2 bg-actionButton my-4">
         <svg
-          className="h-8 w-8 text-white"
+          className="h-8 w-8 text-white sm:h-4 sm:w-4"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -37,7 +35,7 @@ function SearchBar({ search, setSearch }: Props) {
         </svg>
       </button>
       <input
-        className={`my-4 bg-white rounded-r-lg px-4 py-2 w-full text-[#273a57] font-Montserrat-Medium text-[18px] focus:outline-none focus:ring-2 focus:ring-[#337dc1] focus:ring-opacity-50 ${
+        className={`my-4 bg-white rounded-r-lg px-4 py-2 w-full text-[#273a57] font-Montserrat-Medium text-[18px] focus:outline-none focus:ring-2 focus:ring-[#337dc1] focus:ring-opacity-50 sm:text-[14px] ${
           search ? "border-solid border-[0.5px] border-black" : "border-none"
         }`}
         value={search}

@@ -35,14 +35,14 @@ function SectionContainer({ children, sectionTitle, bgColor, data, gridContainer
   };
 
   return (
-    <div className={`w-full px-[100px] py-[45px] ${bgColor}`}>
-      <div className="w-full flex items-center justify-between mb-[25px]">
-        <h2 className="text-black font-Montserrat-SemiBold text-[25px]">
+    <div className={`w-full px-[100px] py-[45px] ${bgColor} sm:px-9`}>
+      <div className="w-full flex items-center justify-between mb-[25px] sm:flex-col sm:items-start">
+        <h2 className="text-black font-Montserrat-SemiBold text-[25px] sm:text-[20px] sm:mb-[15px]">
           {sectionTitle}
         </h2>
         {filtered && (
           <button
-            className="text-white font-Montserrat-Medium text-[12px] bg-[#0ba1ff] rounded-full w-[110px] h-[25px] flex items-center justify-between px-[8px]"
+            className="text-white font-Montserrat-Medium text-[12px] bg-[#0ba1ff] rounded-full w-[110px] h-[25px] flex items-center justify-between px-[8px] sm:text-[10px] sm:w-[95px]"
             onClick={resetTags}
           >
             Reset Filters

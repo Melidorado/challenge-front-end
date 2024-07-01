@@ -13,7 +13,7 @@ function TicketVolume() {
       sectionTitle="Hear Ticket Volume, our podcast of ITSM world"
       bgColor="bg-[#f5f9fc]"
       data={INITIAL_TICKET_VOLUME}
-      gridContainer="grid grid-cols-3 grid-rows-[450px] gap-10"
+      gridContainer="grid grid-cols-3 grid-rows-[450px] gap-10 sm:grid-cols-1 sm:grid-rows-3 sm:gap-7"
     >
       {(data, handleTags) =>
         data.map((article) => (

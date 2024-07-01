@@ -28,11 +28,11 @@ function ArticleCard({
   return (
     <article
       className={`${width} ${height} bg-transparent ${
-        vertical ? "flex flex-col" : "flex flex-row"
+        vertical ? "flex flex-col" : "flex flex-row sm:flex-col"
       }`}
     >
       <div
-        className={`${vertical ? "w-full h-[55%] min-h-[55%]" : "w-[50%]"} `}
+        className={`${vertical ? "w-full h-[55%] min-h-[55%] sm:h-auto sm:min-h-0" : "w-[50%] sm:w-full"} `}
       >
         <img
           className="w-full rounded-[20px] object-cover h-full"
@@ -40,8 +40,8 @@ function ArticleCard({
         />
       </div>
       <section
-        className={`flex flex-col justify-between my-[15px] ${
-          vertical ? "w-full h-[45%]" : "w-[50%] ml-[15px]"
+        className={`flex flex-col justify-between my-[15px] sm:my-[5px] ${
+          vertical ? "w-full h-[45%] sm:h-auto" : "w-[50%] ml-[15px] sm:w-full"
         }`}
       >
         <p className="text-[#417db0] font-Montserrat-Medium text-[12px]">
@@ -50,7 +50,7 @@ function ArticleCard({
         <div className="flex flex-row items-center justify-between">
           <h2
             className={`text-black font-Montserrat-SemiBold ${
-              vertical ? "text-[22px]" : "text-[18px]"
+              vertical ? "text-[22px] sm:text-[18px]" : "text-[18px]"
             }`}
           >
             {title}
@@ -71,7 +71,7 @@ function ArticleCard({
             </svg>
           )}
         </div>
-        <p className={`text-textGrey font-Montserrat-Medium "text-[15px]"`}>
+        <p className={`text-textGrey font-Montserrat-Medium "text-[15px] sm:text-[12px] sm:my-[10px] sm:leading-[110%]"`}>
           {description}
         </p>
         {!search && (
