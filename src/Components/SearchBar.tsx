@@ -1,3 +1,5 @@
+import React from "react";
+
 interface Props {
   search: string;
   setSearch: React.Dispatch<React.SetStateAction<string>>;

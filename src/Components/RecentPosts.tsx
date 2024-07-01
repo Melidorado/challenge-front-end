@@ -1,4 +1,5 @@
 import ArticleCard from "./ArticleCard";
+import React from "react";
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 import { Post } from "../types";
